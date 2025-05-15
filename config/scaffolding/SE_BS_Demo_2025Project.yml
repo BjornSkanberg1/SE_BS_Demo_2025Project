@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/BjornSkanberg1
   gitUsername: BjornSkanberg1
   gitBranch: main
+services:
+- serviceName: project.se_bs_demo_2025.integrations:helloWorld
+  packages:
+  - name: SE_BS_Demo_2025Project
+    version: "1.0"
+- serviceName: pub.string:concat
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2040
