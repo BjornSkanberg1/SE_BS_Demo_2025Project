@@ -8,6 +8,7 @@ packages:
   gitUsername: BjornSkanberg1
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
@@ -51,7 +52,7 @@ configurationVariables:
   ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.trustStore
   : ""
   ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.password
-  : "{AES}wqlcG/xMrzM7YyUrBu9hhQ=="
+  : "{AES}AsegY28Coi/S17V4BYq2Cw=="
   ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.databaseName
   : petclinic
   ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.user
