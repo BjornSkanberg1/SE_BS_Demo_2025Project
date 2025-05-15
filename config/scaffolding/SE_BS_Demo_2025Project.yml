@@ -7,12 +7,74 @@ packages:
   gitUrl: https://github.com/BjornSkanberg1
   gitUsername: BjornSkanberg1
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:myDBk8s
+  packages:
+  - name: SE_BS_Demo_2025Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.se_bs_demo_2025.integrations:helloWorld
   packages:
   - name: SE_BS_Demo_2025Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.string:concat
   packages:
   - name: WmPublic
     version: 11.1.0.0.2040
+configurationVariables:
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.serverName
+  : 192.168.0.1
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionEnabled
+  : "false"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.trustStore
+  : ""
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.password
+  : "{AES}wqlcG/xMrzM7YyUrBu9hhQ=="
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.databaseName
+  : petclinic
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.user
+  : crunchops
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.dbType
+  : MySQL
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.portNumber
+  : "30244"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.driverType
+  : mysql
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionSettings.keyStore
+  : ""
+  ? artConnection.SE_BS_Demo_2025Project.project.se_bs_demo_2025.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.myDBk8s.connectionManagerSettings.blockingTimeout
+  : "1000"
